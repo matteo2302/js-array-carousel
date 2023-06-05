@@ -27,7 +27,7 @@ img {
   right: 50%;
   padding: 7px;
   border-radius: 50%;
-  background-color: rgba(128, 128, 128, 0.295);
+  background-color: rgba(128, 128, 128, 0.595);
   cursor: pointer;
 }
 .fa-chevron-up {
@@ -37,4 +37,20 @@ img {
 .fa-chevron-down {
   transform: translate(50%, -50%);
   bottom: 0;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+.thumbnails img {
+  display: block;
+  height: calc(100% / 5);
+  filter: brightness(0.3);
+}
+.tambnail-box {
+  position: relative;
+}
+.bright {
+  filter: brightness(1);
 }
